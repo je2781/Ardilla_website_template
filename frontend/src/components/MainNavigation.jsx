@@ -3,7 +3,7 @@ import {useState} from 'react';
 import logo from '../assets/squirrel.jpg';
 import globeIcon from '../assets/earth-globe.png';
 import classes from './MainNavigation.module.css';
-import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
+import { animateScroll as scroll } from 'react-scroll';
 
 function MainNavigation() {
 const [sideBarIsOpen, setSideBarIsOpen] = useState(false);
@@ -23,7 +23,7 @@ const token = useRouteLoaderData('root');
   return (
     <div className={classes.bg}>
     <header className={classes.header}>
-      <Link to='/' className={classes.logo}><img src={logo} className={classes['logo-image']} alt='logo' onClick={scrollToTop}/>Ardilla</Link>
+      <Link to='/' className={classes.logo} onClick={() => scroll.scrollToTop()}><img src={logo} className={classes['logo-image']} alt='logo' />Ardilla</Link>
       <div className={classes['toggle-icon']} onClick={handleOpen}><i className='fa fa-bars'></i></div>
       <nav className={classes['main-nav']}>
         <ul className={classes['main-list']}>
