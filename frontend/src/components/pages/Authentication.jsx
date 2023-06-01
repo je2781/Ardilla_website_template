@@ -9,10 +9,10 @@ export default Authentication;
 
 export async function action ({request}){
   const searchParams = new URL(request.url).searchParams;
-  const mode = searchParams.get('mode') || 'signin';
+  const mode = searchParams.get('mode') || 'login';
   const data = await request.formData();
 
-  if (mode !== 'signin' && mode !== 'signup'){
+  if (mode !== 'login' && mode !== 'signup'){
     throw json({message: 'unsupported mode'}, {status: 422});
   }
 

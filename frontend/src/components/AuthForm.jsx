@@ -8,12 +8,12 @@ function AuthForm() {
 
   const isSubmitting = navigation.state === 'submitting';
 
-  const isSignin = searchParams.get('mode') === 'signin';
+  const isLogin = searchParams.get('mode') === 'login';
   const data = useActionData();
   return (
     <>
       <Form method="post" className={classes.form}>
-        <h1>{isSignin ? 'Sign in' : 'Create a new user'}</h1>
+        <h1>{isLogin ? 'Login' : 'Create a new user'}</h1>
         {data && data.message && <p className={classes.error}>{data.message}</p>}
         <p>
           <label htmlFor="email">Email</label>
@@ -26,8 +26,8 @@ function AuthForm() {
           {data && data.errors && <p className={classes.error}>{data.errors['password']}</p>}
         </p>
         <div className={classes.actions}>
-          <Link to={`?mode=${isSignin ? 'signup' : 'signin'}`}>
-            {isSignin ? 'Create new user' : 'Sign in'}
+          <Link to={`?mode=${isLogin ? 'signup' : 'login'}`} className={classes.btn}>
+            {isLogin ? 'Create new user' : 'Log in'}
           </Link>
           <button disabled={isSubmitting} >{isSubmitting ? 'Submitting...' : 'Submit'}</button>
         </div>
