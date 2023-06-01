@@ -30,7 +30,8 @@ a{
 }
 
 a:hover{
-  color: var(--color-amber);
+  background-color: var(--color-primary-400);
+  color: #fff;
 }
 
 .mobile-nav{
@@ -127,4 +128,11 @@ a:hover{
 
   --color-primary-300-fade: rgba(135, 8, 247, 0.2);
 
+}
+
+@media screen and (min-width: 991px){
+
+  .mobile-nav{
+      display: none;
+  }
 }

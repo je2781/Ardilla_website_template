@@ -39,16 +39,16 @@ const token = useRouteLoaderData('root');
             <NavLink to='/learn' className={({isActive}) => isActive ? classes.active : undefined}>Learn</NavLink>
           </li> 
         </ul>
-        <ul className={classes['secondary-list']}>
+       {!token && <ul className={classes['secondary-list']}>
           <li>
             <NavLink
-              to="/auth?mode=signin"
+              to="/auth?mode=login"
               className={({ isActive }) =>
               isActive ? classes.active : undefined
               }
               end
             >
-              Sign In
+              Log In
             </NavLink>
           </li> 
           <li>
@@ -65,7 +65,7 @@ const token = useRouteLoaderData('root');
           <li>
           <Link><img src={globeIcon} className={classes['globe-icon']} alt='globe-icon'/><span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></Link>
           </li>
-        </ul>
+        </ul>}
       </nav>
       {sideBarIsOpen && <nav className={sideBarIsOpen ? 'mobile-nav open' : 'mobile-nav'}>
         <div onClick={handleClose} className='cancel'><i className='fa fa-times'></i></div>
@@ -86,13 +86,13 @@ const token = useRouteLoaderData('root');
         <ul>
           <li>
             <NavLink
-              to="/auth?mode=signin"
+              to="/auth?mode=login"
               className={({ isActive }) =>
               isActive ? classes.active : undefined
               }
               end
             >
-              Sign In
+              Log In
             </NavLink>
           </li> 
           <li>
@@ -101,7 +101,6 @@ const token = useRouteLoaderData('root');
               className={({ isActive }) =>
               isActive ? `btn ${classes.active}` : 'btn'
               }
-              end
             >
               Create Account
             </NavLink>
