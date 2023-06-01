@@ -1,0 +1,116 @@
+.section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 5%;
+    background: var(--color-gray-102);
+}
+
+.trendlines{
+    margin-right: -15.2rem;
+}
+
+.t1{
+    width: 350px;
+    transform: translate(-42px, -15px);
+}
+
+.t2{
+    width: 350px;
+    transform: translate(-390px, -5px);
+}
+
+.section h1{
+    line-height: 1;
+}
+
+.first-heading{
+    font-family: 'CabinetGrotesk-Extrabold';
+    font-size: 80px;
+    color: var(--color-primary-500);
+}
+
+.second-heading{
+    font-family: 'CabinetGrotesk-Extrabold';
+    font-size: 80px;
+    color: var(--color-pale-green);
+}
+
+.paragraph{
+    color: var(--color-primary-500);
+    font-family: 'CabinetGrotesk-Medium';
+    font-size: 21px;
+    line-height: 40px;
+    margin: 3rem 0 4rem 0;
+}
+
+.btn{
+    font: inherit;
+    color: var(--color-primary-300);
+    padding: 1.15rem 2rem;
+    border: 1px solid var(--color-primary-300);
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.btn:after{
+    content: '\f08e';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 12px;
+    font-weight: 900;
+    vertical-align: middle;
+    color: #fff;
+    background-color: var(--color-primary-300);
+    margin-left: 1rem;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    padding: .5rem;
+}
+
+.btn:hover, .btn.active, .btn:active{
+    background-color: var(--color-primary-300);
+    color: #fff;
+}
+
+.btn:hover:after, .btn.active:after, .btn:active:after{
+    color: var(--color-primary-300);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 991px){
+    .section{
+        display: flex;
+        flex-direction: column;
+        padding: 10% 5%;
+    }
+    
+    .t1{
+        display: none;
+    }
+    
+    .t2{
+        display: none;
+
+    }
+    
+    .first-heading{
+        font-size: 50px;
+    }
+
+    .second-heading{
+        font-size: 50px;
+    }
+    
+    .paragraph{
+        font-size: 15px;
+        line-height: 20px;
+        /* margin: 3rem 0 4rem 0; */
+    }
+    
+    .btn{
+        padding: 1rem 1.25rem;
+    }
+    
+
+}
