@@ -29,6 +29,10 @@ a{
   color: #fff;
 }
 
+a:hover, a:active, a.active{
+  color: var(--color-amber);
+}
+
 .mobile-nav a:hover, .mobile-nav a:active, .mobile-nav a.active{
   background-color: var(--color-primary-400);
   color: #fff;
