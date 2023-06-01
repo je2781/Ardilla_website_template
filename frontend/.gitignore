@@ -11,11 +11,6 @@
 # production
 /build
 
-#files
-/public/fontawesome/
-/src/assets/
-/src/css/
-
 # misc
 .DS_Store
 .env.local
