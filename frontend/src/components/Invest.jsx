@@ -4,7 +4,7 @@ import trendline2 from '../assets/trendline2.png'
 import classes from './Invest.module.css';
 
 function Invest(){
-    return(<section className={classes.section}>
+    return(<section className={classes.section} id='section-4'>
         <div className={classes.content}>
             <h1><span className={classes['first-heading']}>Unlimited <span className={classes['second-heading']}>Investment</span></span><br/><span className={classes['second-heading']}>Opportunities</span></h1>
             <p className={classes.paragraph}>Plan towards your future by investing with ardilla, Grow your money<br/>confidently and securely with the available investment opportunities</p>

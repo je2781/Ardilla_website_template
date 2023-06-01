@@ -3,6 +3,7 @@ import {useState} from 'react';
 import logo from '../assets/squirrel.jpg';
 import globeIcon from '../assets/earth-globe.png';
 import classes from './MainNavigation.module.css';
+import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
 
 function MainNavigation() {
 const [sideBarIsOpen, setSideBarIsOpen] = useState(false);
@@ -22,21 +23,21 @@ const token = useRouteLoaderData('root');
   return (
     <div className={classes.bg}>
     <header className={classes.header}>
-      <Link to='/' className={classes.logo}><img src={logo} className={classes['logo-image']} alt='logo'/>Ardilla</Link>
+      <Link to='/' className={classes.logo}><img src={logo} className={classes['logo-image']} alt='logo' onClick={scrollToTop}/>Ardilla</Link>
       <div className={classes['toggle-icon']} onClick={handleOpen}><i className='fa fa-bars'></i></div>
       <nav className={classes['main-nav']}>
         <ul className={classes['main-list']}>
           <li>
-            <NavLink to='/products' className={({isActive}) => isActive ? classes.active : undefined }>Products<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
+            <NavLink to='/products' className={({isActive}) => isActive ?  classes.active : undefined}>Products<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
           </li>
           <li>
-            <NavLink to='/business' className={({isActive}) => isActive ? classes.active : undefined}>Business<span className={classes.span}> </span><i className={classes.beta}>Beta</i></NavLink>
+            <NavLink to='/business' className={({isActive}) => isActive ?  classes.active : undefined}>Business<span className={classes.span}> </span><i className={classes.beta}>Beta</i></NavLink>
           </li>
           <li>
-            <NavLink to='/company' className={({isActive}) => isActive ? classes.active : undefined}>Company<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
+            <NavLink to='/company' className={({isActive}) => isActive ?  classes.active : undefined}>Company<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
           </li>
           <li>
-            <NavLink to='/learn' className={({isActive}) => isActive ? classes.active : undefined}>Learn</NavLink>
+            <NavLink to='/learn' className={({isActive}) => isActive ?  classes.active : undefined}>Learn</NavLink>
           </li> 
         </ul>
        {!token && <ul className={classes['secondary-list']}>
@@ -71,13 +72,13 @@ const token = useRouteLoaderData('root');
         <div onClick={handleClose} className='cancel'><i className='fa fa-times'></i></div>
         <ul>
           <li>
-            <NavLink to='/products' onClick={handleClose} className={({isActive}) => isActive ? classes.active : undefined }>Products<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
+            <NavLink to='/products' onClick={handleClose} className={({isActive}) => isActive ?  classes.active : undefined}>Products<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
           </li>
           <li>
-            <NavLink to='/business' onClick={handleClose} className={({isActive}) => isActive ? classes.active : undefined}>Business<span className={classes.span}> </span><i className={classes.beta}>Beta</i></NavLink>
+            <NavLink to='/business' onClick={handleClose} className={({isActive}) => isActive ?  classes.active : undefined}>Business<span className={classes.span}> </span><i className={classes.beta}>Beta</i></NavLink>
           </li>
           <li>
-            <NavLink to='/company'onClick={handleClose}  className={({isActive}) => isActive ? classes.active : undefined}>Company<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
+            <NavLink to='/company'onClick={handleClose}  className={({isActive}) => isActive ?  classes.active : undefined}>Company<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
           </li>
           <li>
             <NavLink to='/learn' onClick={handleClose} className={({isActive}) => isActive ? classes.active : undefined}>Learn</NavLink>

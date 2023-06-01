@@ -6,7 +6,7 @@ import verified from '../assets/verified.png';
 
 function Hero(){
     return(
-        <div className={classes.section}>
+        <div className={classes.section} id='section-1'>
             <header className={classes.header}>
                 <h1>Your Access To                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      More</h1>
                 <p>Ardilla helps you save and invest <i className='bi bi-shield-fill-check'></i>in achieving your financial goals, we have the most flexible and seamless way<br/>to grow your funds.</p>
