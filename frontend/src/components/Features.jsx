@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import classes from './Features.module.css';
 
 function Features(){
-    return(<section className={classes.section}>
+    return(<section className={classes.section} id='section-5'>
         <h1>Access More With Your Money</h1>
         <p>Earn, learn, parley, and grow financially. With Ardilla, you have more opportunities than ever at your fingertips. Why not<br/>take advantage today?</p>
         <div className={classes.action}>

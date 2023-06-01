@@ -83,13 +83,13 @@ i{
     vertical-align: middle;
 }
 
-.btn{
+.main-nav .btn{
     background-color: var(--color-primary-300);
     padding: 1rem 2.25rem;
     border-radius: 25px;
 }
 
-.btn.active, .btn:hover, .btn:active{
+.main-nav .btn.active, .main-nav .btn:hover, .main-nav .btn:active{
     background-color: var(--color-primary-400);
     color: #fff;
 }

@@ -4,7 +4,7 @@ import graph from '../assets/savings_graph.jpg';
 
 function InterestCalculator() {
     return(
-        <section className={classes.section}>
+        <section className={classes.section} id='section-3'>
             <div className={classes.content}>
                 <h1 className={classes['first-heading']}>We're keen On<br/><span className={classes['second-heading']}>Transparency</span></h1>
                 <p className={classes.paragraph}>Calculate your interests every time you save on our platform.</p>

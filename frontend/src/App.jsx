@@ -6,7 +6,6 @@ import Authentication, {action as authAction} from "./components/pages/Authentic
 import Error from "./components/pages/Error";
 import {checkAuthLoader, loader as authTokenLoader} from './util/auth';
 
-
 function App() {
   const router = createBrowserRouter([
     {
