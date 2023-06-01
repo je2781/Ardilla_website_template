@@ -29,7 +29,11 @@ a{
   color: #fff;
 }
 
-a:hover{
+a:hover, a:active, a.active{
+  color: var(--color-amber);
+}
+
+.mobile-nav a:hover, .mobile-nav a:active, .mobile-nav a.active{
   background-color: var(--color-primary-400);
   color: #fff;
 }
@@ -65,15 +69,11 @@ a:hover{
 }
 
 
-.btn{
+.mobile-nav .btn{
   background-color: var(--color-primary-300);
   padding: 1rem 2.25rem;
   border-radius: 25px;
   margin: .5rem 0;
-}
-
-.btn.active, .btn:hover, .btn:active{
-  background-color: var(--color-primary-400);
   color: #fff;
 }
 

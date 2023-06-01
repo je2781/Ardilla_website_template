@@ -71,22 +71,23 @@ const token = useRouteLoaderData('root');
         <div onClick={handleClose} className='cancel'><i className='fa fa-times'></i></div>
         <ul>
           <li>
-            <NavLink to='/products' className={({isActive}) => isActive ? classes.active : undefined }>Products<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
+            <NavLink to='/products' onClick={handleClose} className={({isActive}) => isActive ? classes.active : undefined }>Products<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
           </li>
           <li>
-            <NavLink to='/business' className={({isActive}) => isActive ? classes.active : undefined}>Business<span className={classes.span}> </span><i className={classes.beta}>Beta</i></NavLink>
+            <NavLink to='/business' onClick={handleClose} className={({isActive}) => isActive ? classes.active : undefined}>Business<span className={classes.span}> </span><i className={classes.beta}>Beta</i></NavLink>
           </li>
           <li>
-            <NavLink to='/company' className={({isActive}) => isActive ? classes.active : undefined}>Company<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
+            <NavLink to='/company'onClick={handleClose}  className={({isActive}) => isActive ? classes.active : undefined}>Company<span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></NavLink>
           </li>
           <li>
-            <NavLink to='/learn' className={({isActive}) => isActive ? classes.active : undefined}>Learn</NavLink>
+            <NavLink to='/learn' onClick={handleClose} className={({isActive}) => isActive ? classes.active : undefined}>Learn</NavLink>
           </li> 
         </ul>
         <ul>
           <li>
             <NavLink
               to="/auth?mode=login"
+              onClick={handleClose}
               className={({ isActive }) =>
               isActive ? classes.active : undefined
               }
@@ -98,6 +99,7 @@ const token = useRouteLoaderData('root');
           <li>
             <NavLink
               to="/auth?mode=signup"
+              onClick={handleClose}
               className={({ isActive }) =>
               isActive ? `btn ${classes.active}` : 'btn'
               }
@@ -106,7 +108,7 @@ const token = useRouteLoaderData('root');
             </NavLink>
           </li>
           <li>
-          <Link><img src={globeIcon} className={classes['globe-icon']} alt='globe-icon'/><span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></Link>
+          <Link onClick={handleClose}><img src={globeIcon} className={classes['globe-icon']} alt='globe-icon'/><span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></Link>
           </li>
         </ul>
       </nav>}

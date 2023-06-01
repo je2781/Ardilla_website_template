@@ -16,17 +16,17 @@ function InterestCalculator() {
                 <div>
                     <h1>Calculate Your Interests</h1>
                     <form>
-                        <label className={classes.label} for='period'>How often are you saving?</label>
+                        <label className={classes.label} htmlFor='period'>How often are you saving?</label>
                         <select id='period' className={classes.select}>
                             <option value='weekly'>Weekly</option>
                             <option value='yearly'>Yearly</option>
                             <option value='monthly'>Monthly</option>
                         </select>
-                        <label className={classes.label} for='amount'>How much are you saving?</label>
-                        <input type='text' id="amount" value='2,000'/>
+                        <label className={classes.label} htmlFor='amount'>How much are you saving?</label>
+                        <input type='text' id="amount" defaultValue='2,000'/>
                         <div className={classes.underline}></div>
-                        <label className={classes.label} for='months'>How long are you saving for? (in months)</label>
-                        <input type='text' id="months" value='3'/>
+                        <label className={classes.label} htmlFor='months'>How long are you saving for? (in months)</label>
+                        <input type='text' id="months" defaultValue='3'/>
                         <div className={classes.underline}></div>
                     </form>
                 </div>
