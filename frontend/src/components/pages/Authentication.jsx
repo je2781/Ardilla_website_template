@@ -21,6 +21,9 @@ export async function action ({request}){
     password: data.get('password')
   };
 
+  console.log(authData);
+
+
   const response = await fetch('http://localhost:8080/' + mode, {
     method: 'POST',
     headers: {
@@ -38,15 +41,6 @@ export async function action ({request}){
       status: 500
     });
   }
-
-  const resData = await response.json();
-  const token = resData.token;
-  localStorage.setItem('token', token);
-
-
-  const expiration = new Date();
-  expiration.setHours(expiration.getHours() + 1) ;
-  localStorage.setItem('expiration', expiration.toISOString());
 
   return redirect('/');
 }
