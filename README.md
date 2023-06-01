@@ -15,6 +15,11 @@ In the backend project directory, you also run
 
 Runs the server app. The server must be running at the same time as the react app to experience user authentication.
 
+## Dependencies
+
+Install the Cabinet-Grotesk font, fontawesome v.5, have your assets/images ready, as placeholder images
+
+
 
 
 
