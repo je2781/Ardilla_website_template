@@ -15,7 +15,6 @@ In the backend project directory, you also run
 
 Runs the server app. The server must be running at the same time as the react app to experience user authentication.
 
-## Dependencies
 
 
 
