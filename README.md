@@ -17,7 +17,6 @@ Runs the server app. The server must be running at the same time as the react ap
 
 ## Dependencies
 
-Install the Cabinet-Grotesk font, fontawesome v.5, and have your assets/images ready, as placeholder images. The directory folders where they are stored is shown in the gitignore file - which was excluded to make the repo lean
 
 
 
