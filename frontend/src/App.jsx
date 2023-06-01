@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from './components/pages/Root';
 import HomePage from './components/pages/Home';
 import Authentication, {action as authAction} from "./components/pages/Authentication";
-import ErrorPage from "./components/pages/Error";
+import Error from "./components/pages/Error";
 import {checkAuthLoader, loader as authTokenLoader} from './util/auth';
 
 
@@ -12,7 +12,7 @@ function App() {
     {
       path: "/",
       element: <RootLayout />,
-      errorElement: <ErrorPage />,
+      errorElement: <Error />,
       loader: authTokenLoader,
       id: 'root',
       children: [
