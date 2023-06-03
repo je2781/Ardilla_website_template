@@ -4,7 +4,7 @@ import RootLayout from './components/pages/Root';
 import HomePage from './components/pages/Home';
 import Authentication, {action as authAction} from "./components/pages/Authentication";
 import Error from "./components/pages/Error";
-import {checkAuthLoader, loader as authTokenLoader} from './util/auth';
+import {loader as authTokenLoader} from './util/auth';
 
 function App() {
   const router = createBrowserRouter([
@@ -20,7 +20,7 @@ function App() {
           path: "auth",
           element: <Authentication/>,
           action: authAction     
-        }
+        },
       ],
     },
   ]);

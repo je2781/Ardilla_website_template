@@ -1,4 +1,4 @@
-const fs = require('node:fs/promises');
+const fs = require('node:fs/promises')
 // const path = require('path');
 // const rootDir = path.dirname(require.main.filename);
 

@@ -3,6 +3,7 @@ import ProductOverview from '../ProductOverview';
 import InterestCalculator from '../InterestCalc';
 import Invest from '../Invest';
 import Features from '../Features';
+import Traction from '../Traction';
 
 function Home(){
     return(<>
@@ -11,6 +12,7 @@ function Home(){
         <InterestCalculator/>
         <Invest/>
         <Features/>
+        <Traction/>
         </>);
 }
 

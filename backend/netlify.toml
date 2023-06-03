@@ -4,6 +4,10 @@
 [dev]
     publish = "dist"
 
+[functions]
+    directory = "functions"
+    included_files = ["users.json"]
+
 [[redirects]]
     to = "/.netlify/functions/api/:splat"
     from = "/*"

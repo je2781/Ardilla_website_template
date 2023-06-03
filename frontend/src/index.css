@@ -118,13 +118,27 @@ a:hover, a:active, a.active{
   --color-gray-800: #2f353b;
   --color-gray-900: #181f24;
 
+  --color-green-200: #d2ffde;
   --color-green-300: #19fd82;
   --color-green-400: #22c55e;
+  --color-green-900: #2a332c;
+
+  --color-blue-200: #c8c1fd;
+  --color-blue-500: #35298a;
+  --color-blue-900: #282733;
+
+
   --color-pale-green: #0d9488;
   --color-amber: #eab308;
+
+  --color-limegreen-100: #faf7c3; 
+  --color-limegreen-500: #9f9704;
+  --color-limegreen-900: #333228;
+
   --color-flavescent: #ffeb35;
   --color-secondary: #e8356d;
   --color-secondary2: #e6366e;
+  
 
   --color-primary-100: #ffeaff;
   --color-primary-200: #d6abfc;

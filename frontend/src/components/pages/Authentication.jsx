@@ -21,9 +21,6 @@ export async function action ({request}){
     password: data.get('password')
   };
 
-  console.log(authData);
-
-
   const response = await fetch('https://beamish-dolphin-bdf3fc.netlify.app/' + mode, {
     method: 'POST',
     headers: {

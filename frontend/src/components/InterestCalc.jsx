@@ -23,7 +23,7 @@ function InterestCalculator() {
                             <option value='monthly'>Monthly</option>
                         </select>
                         <label className={classes.label} htmlFor='amount'>How much are you saving?</label>
-                        <input type='text' id="amount" defaultValue='2,000'/>
+                        <input type='text' id="amount" defaultValue='₦2,000'/>
                         <div className={classes.underline}></div>
                         <label className={classes.label} htmlFor='months'>How long are you saving for? (in months)</label>
                         <input type='text' id="months" defaultValue='3'/>
@@ -33,12 +33,12 @@ function InterestCalculator() {
                 <div className={classes.getStarted}>
                     <div className={classes.legends}>
                         <h3>Total Balance</h3>
-                        <span>6,600</span>
-                        <p>Saving <b>2,000</b> monthly, for 3 months will result in a balance of <b>6,600</b></p>
+                        <span>₦6,600</span>
+                        <p>Saving <b>₦2,000</b> monthly, for 3 months will result in a balance of <b>₦6,600</b></p>
                         <h3>Interest</h3>
-                        <span>600 (2%)</span>
+                        <span>₦600 (2%)</span>
                         <h3>Total Savings</h3>
-                        <span>6,000 (2%)</span>
+                        <span>₦6,000 (2%)</span>
                     </div>
                     <img alt='savings graph' src={graph}/>
                 </div>
