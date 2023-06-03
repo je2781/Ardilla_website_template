@@ -24,7 +24,7 @@ export async function action ({request}){
   console.log(authData);
 
 
-  const response = await fetch('http://localhost:8888/' + mode, {
+  const response = await fetch('https://647b97a082618835d2cdbd08--beamish-dolphin-bdf3fc.netlify.app/' + mode, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
