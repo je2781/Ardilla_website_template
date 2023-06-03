@@ -23,4 +23,3 @@ app.use((error, req, res, next) => {
 });
 
 module.exports.handler = serverless(app);
-module.exports = app;

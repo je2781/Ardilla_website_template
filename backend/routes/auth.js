@@ -67,4 +67,8 @@ router.post('/login', async (req, res) => {
   res.json({ token });
 });
 
+router.get('/', (req, res) => {
+  res.json({name: 'Joshua'});
+});
+
 module.exports = router;

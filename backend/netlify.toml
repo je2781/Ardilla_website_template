@@ -2,7 +2,7 @@
     functions = "functions"
 
 [dev]
-    publish = "build"
+    publish = "dist"
 
 [[redirects]]
     to = "/.netlify/functions/api/:splat"
