@@ -78,6 +78,18 @@
     background-color: #fff;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1348px){
+    .t1{
+        width: 350px;
+        transform: translate(-72px, 89px);
+    }
+    
+    .t2{
+        width: 350px;
+        transform: translate(-70px, -250px);
+    }
+}
+
 @media screen and (max-width: 991px){
     .section{
         display: flex;

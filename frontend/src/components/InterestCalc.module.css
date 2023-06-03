@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 5% 6% 5%;
+    padding: 2.3% 5% 6% 5%;
     background: #fff;
 }
 
@@ -147,11 +147,16 @@ input{
     padding: 0;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1249px){
     .section{
         display: flex;
         flex-direction: column;
-        padding: 6% 5% 6% 5%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .section{
+        padding: 6% 5%;
     }
     .second-heading{
         font-size: 50px;

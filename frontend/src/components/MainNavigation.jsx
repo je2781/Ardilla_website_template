@@ -63,7 +63,7 @@ const token = useRouteLoaderData('root');
               Create Account
             </NavLink>
           </li>
-          <li>
+          <li className={classes['last-item']}>
           <Link><img src={globeIcon} className={classes['globe-icon']} alt='globe-icon'/><span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></Link>
           </li>
         </ul>}
@@ -108,7 +108,7 @@ const token = useRouteLoaderData('root');
               Create Account
             </NavLink>
           </li>
-          <li>
+          <li >
           <Link onClick={handleClose}><img src={globeIcon} className={classes['globe-icon']} alt='globe-icon'/><span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></Link>
           </li>
         </ul>
