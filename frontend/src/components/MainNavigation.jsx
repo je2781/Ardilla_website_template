@@ -1,4 +1,4 @@
-import {NavLink, Link, useRouteLoaderData} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 import {useState} from 'react';
 import logo from '../assets/squirrel.jpg';
 import globeIcon from '../assets/earth-globe.png';
@@ -17,8 +17,6 @@ function handleOpen(){
   setSideBarIsOpen(prevState => !prevState);
 
 }
-
-const token = useRouteLoaderData('root');
 
   return (
     <div className={classes.bg}>
@@ -40,10 +38,10 @@ const token = useRouteLoaderData('root');
             <NavLink to='/learn' className={({isActive}) => isActive ?  classes.active : undefined}>Learn</NavLink>
           </li> 
         </ul>
-       {!token && <ul className={classes['secondary-list']}>
+        <ul className={classes['secondary-list']}>
           <li>
             <NavLink
-              to="/auth?mode=login"
+              to="/login"
               className={({ isActive }) =>
               isActive ? classes.active : undefined
               }
@@ -54,7 +52,7 @@ const token = useRouteLoaderData('root');
           </li> 
           <li>
             <NavLink
-              to="/auth?mode=signup"
+              to="/signup"
               className={({ isActive }) =>
               isActive ? `${classes.btn} ${classes.active}` : classes.btn
               }
@@ -66,7 +64,7 @@ const token = useRouteLoaderData('root');
           <li className={classes['last-item']}>
           <Link><img src={globeIcon} className={classes['globe-icon']} alt='globe-icon'/><span className={classes.span}> </span><i className='fa-solid fa-caret-down'></i></Link>
           </li>
-        </ul>}
+        </ul>
       </nav>
       {sideBarIsOpen && <nav className={sideBarIsOpen ? 'mobile-nav open' : 'mobile-nav'}>
         <div onClick={handleClose} className='cancel'><i className='fa fa-times'></i></div>
@@ -87,7 +85,7 @@ const token = useRouteLoaderData('root');
         <ul>
           <li>
             <NavLink
-              to="/auth?mode=login"
+              to="/login"
               onClick={handleClose}
               className={({ isActive }) =>
               isActive ? classes.active : undefined
@@ -99,7 +97,7 @@ const token = useRouteLoaderData('root');
           </li> 
           <li>
             <NavLink
-              to="/auth?mode=signup"
+              to="/signup"
               onClick={handleClose}
               className={({ isActive }) =>
               isActive ? `btn ${classes.active}` : 'btn'

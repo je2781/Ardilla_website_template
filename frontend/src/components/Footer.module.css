@@ -1,0 +1,168 @@
+.section{
+    background-color: var(--color-primary-300);
+    padding: 4% 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-family: 'CabinetGrotesk-Regular';
+    font-size: 13px;
+    line-height: 32px;
+    color: #fff;
+}
+
+li.title{
+    font-family: 'CabinetGrotesk-Extrabold';
+    line-height: 68px;
+    font-size: 13px;
+}
+
+.header{
+    background-color: var(--color-primary-400);
+    position: relative;
+    width: 941px;
+    height: 306.37px;
+    border-radius: 16px;
+    margin-top: -14rem;
+    padding-left: 3rem;
+}
+
+
+.header img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    border-radius: 16px;
+    filter: sepia(1) saturate(0);
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 3;
+}
+
+
+.header-section h1{
+    color: #fff;
+    font-family: 'CabinetGrotesk-Bold';
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    font: inherit;
+    background-color: #fff;
+    padding: 1.25rem 1rem;
+    border-radius: 12px;
+    color: var(--color-primary-400);
+}
+
+.btn:hover, .btn.active, .btn:active{
+    background-color: var(--color-primary-400);
+    color: #fff;
+}
+
+.span:before{
+    content: '';
+    display: inline-block;
+    width: .25rem;
+}
+
+.coming-soon{
+    border-radius: .5rem;
+    border: 1px solid #fff;
+    padding: .125rem .25rem;
+    line-height: 16px;
+    font-family: 'CabinetGrotesk-Medium';
+    font-size: 5px;
+}
+
+.coming-soon:hover, .coming-soon.active, .coming-soon:active, 
+a:hover .coming-soon, a:active .coming-soon, a.active .coming-soon{
+    border: 1px solid  var(--color-amber);
+}
+
+.content{
+    margin-top: 4rem;
+}
+
+.divider{
+    border: 1px solid #fff;
+    margin-top: 1.5rem;
+}
+
+.end-of-content{
+    color: #fff;
+    font-family: 'CabinetGrotesk-Medium';
+    font-size: 14px;
+    margin-top: 1.75rem;
+    line-height: 17px;
+
+}
+
+.brand-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-content i{
+    border-radius: 50%;
+    font-size: 17px;
+    border: 1px solid #fff;
+    padding: .5rem;
+    margin-right: .5rem;
+}
+
+.brand-content i:hover, .brand-content i.active, .brand-content i:active{
+    border: 1px solid  var(--color-amber);
+}
+
+.license-agreement{
+    font-family: 'CabinetGrotesk-Regular';
+    font-size: 13px;  
+    line-height: 32px;
+}
+
+@media screen and (max-width: 991px){
+
+    .header{
+        width: 700px;
+        height: 250px;
+        margin-top: -9rem;
+    }
+
+    .header-section h1{
+        font-size: 20px;
+    }
+    
+    .btn{
+        padding: 1rem .5rem;
+    }
+    
+    .screenshot{
+        display: none;
+    }
+    
+    .brand-content{
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+
+    .coming-soon{
+        display: none;
+    }
+
+}

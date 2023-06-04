@@ -1,0 +1,135 @@
+.section{
+    background-color: var(--color-gray-101);
+    padding: 6% 5% 8% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outlets{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.outlet1{
+    width: 131px;
+    height: 65.41px;
+    margin: .5rem 1.5rem .5rem 0;
+    border-radius: 12px;
+    background-color: var(--color-gray-300);
+}
+
+.outlet2{
+    width: 131px;
+    height: 65.41px;
+    margin: .5rem 1.5rem .5rem 0;
+    border-radius: 12px;
+    background-color: var(--color-gray-300);
+}
+
+.outlet3{
+    width: 131px;
+    height: 65.41px;
+    margin: .5rem 1.5rem .5rem 0;
+    border-radius: 12px;
+    background-color: var(--color-gray-300);
+}
+
+.outlet4{
+    width: 131px;
+    height: 65.41px;
+    margin: .5rem 1.5rem .5rem 0;
+    border-radius: 12px;
+    background-color: var(--color-gray-300);
+}
+
+.screenshot{
+    width: 965px;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    margin-top: 6rem;
+    border-radius: 21px;
+    background-color: var(--color-gray-100);
+    box-shadow: 4px 8px 16px var(--color-gray-300);
+    -webkit-box-shadow: 4px 8px 16px var(--color-gray-300);
+}
+
+.screenshot h1{
+    font-size: 35px;
+    line-height: 43px;
+    font-family: 'CabinetGrotesk-Extrabold';
+    color: var(--color-primary-500);
+}
+
+.screenshot p{
+    font-size: 12px;
+    font-family: 'CabinetGrotesk-Medium';
+    line-height: 20px;
+    margin: .5rem 0 2.5rem 0;
+    text-align: center;
+    color: var(--color-primary-500);
+}
+
+.screenshot img{
+    width: 550px;
+    height: 105%;
+    overflow-y: hidden;
+    border-radius: 18px 18px 0 0;
+}
+
+@media screen and (max-width: 991px){
+    .section{
+        padding: 8% 5% 10% 5%;
+    }
+
+    .outlets{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .outlet1{
+        width: 100px;
+        height: 30px;
+    }
+    
+    .outlet2{
+        width: 100px;
+        height: 30px;
+    }
+    
+    .outlet3{
+        width: 100px;
+        height: 30px;
+    }
+    
+    .outlet4{
+        width: 100px;
+        height: 30px;
+    }
+
+    .screenshot{
+        margin-top: 4rem;
+    }
+
+    .screenshot h1{
+        font-size: 25px;
+    }
+    
+    .screenshot p{
+        font-size: 10px;
+    }
+    
+    .screenshot{
+        width: 400px;
+        height: 300px;
+    }
+
+    .screenshot img{
+        width: 320px;
+    }
+}

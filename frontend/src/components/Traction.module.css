@@ -1,7 +1,6 @@
 .section{
-        background: radial-gradient(#8b2776, var(--color-primary-800), var(--color-primary-800));
-        padding: 5%;
-        
+    background: radial-gradient(#8b2776, var(--color-primary-800), var(--color-primary-800));
+    padding: 5% 5% 25% 5%;
 }
 
 .section h1{
@@ -147,6 +146,9 @@
 }
 
 @media screen and (max-width: 991px){
+    .section{
+        padding: 5% 5% 55% 5%;
+    }
 
     .section h1{
         font-size: 50px;
@@ -164,8 +166,8 @@
 
     .infometrics1{
         margin: 1rem 0;
-        width: 330px;
-        height: 480px;
+        width: 300px;
+        height: 450px;
     }
 
     .infometrics1 h1{
@@ -179,8 +181,8 @@
 
     .infometrics2{
         margin: 1rem 0;
-        width: 330px;
-        height: 480px;
+        width: 300px;
+        height: 450px;
     }
 
     .infometrics2 h1{
@@ -194,8 +196,8 @@
 
     .infometrics3{
         margin: 1rem 0;
-        width: 330px;
-        height: 480px;
+        width: 300px;
+        height: 450px;
     }
 
     .infometrics3 h1{

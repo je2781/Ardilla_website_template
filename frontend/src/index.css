@@ -50,11 +50,11 @@ a:hover, a:active, a.active{
 
 .mobile-nav{
   position: fixed;
-  height: 70%;
+  height: 70vh;
   top: 0;
   left: 0;
   padding: 2rem 2rem .5rem 2rem;
-  width: 100vw;
+  width: 100%;
   transform: translateY(-100%);
   background-color: var(--color-primary-400);
   transition: transform 0.3s ease-out;
@@ -76,6 +76,8 @@ a:hover, a:active, a.active{
 
 .mobile-nav li{
   margin: 1rem 0;
+  font-size: 15px;
+  font-family: 'CabinetGrotesk-Medium';
 }
 
 
@@ -111,6 +113,7 @@ a:hover, a:active, a.active{
   --color-gray-102: #fffdf2;
   --color-gray-101: #f8fafc;
   --color-gray-100: #f3f4f6;
+  --color-gray-300: #bdc3ce;
   --color-gray-400: #9ca3af;
   --color-gray-500: #6b7280;
   --color-gray-600: #545863;
@@ -143,7 +146,7 @@ a:hover, a:active, a.active{
   --color-primary-100: #ffeaff;
   --color-primary-200: #d6abfc;
   --color-primary-300: #8807F7;
-  --color-primary-400: #43027e;
+  --color-primary-400: #3c0071;
   --color-primary-500: #3d0072;
   --color-primary-600: #240053;
   --color-primary-700: #29014b;

@@ -1,12 +1,12 @@
 const fs = require('fs').promises;
 
 async function readData() {
-  const data = await fs.readFile('users.json', 'utf8');
+  const data = await fs.readFile('./src/users.json', 'utf8');
   return JSON.parse(data);
 }
 
 async function writeData(data) {
-  await fs.writeFile('users.json', JSON.stringify(data));
+  await fs.writeFile('./src/users.json', JSON.stringify(data));
 }
 
 exports.readData = readData;

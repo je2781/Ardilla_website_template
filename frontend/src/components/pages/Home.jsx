@@ -4,6 +4,9 @@ import InterestCalculator from '../InterestCalc';
 import Invest from '../Invest';
 import Features from '../Features';
 import Traction from '../Traction';
+import Footer from '../Footer';
+import Testimonials from '../Testimonials';
+import Reviews from '../Reviews';
 
 function Home(){
     return(<>
@@ -12,7 +15,10 @@ function Home(){
         <InterestCalculator/>
         <Invest/>
         <Features/>
+        <Testimonials/>
+        <Reviews/>
         <Traction/>
+        <Footer/>
         </>);
 }
 

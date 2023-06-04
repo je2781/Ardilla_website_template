@@ -1,15 +1,11 @@
-/* .backdrop{
-    background: url('../assets/hero-backdrop.png') 50% 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+.backdrop{
+    background-color: var(--color-primary-600);
+    padding: 5% .5% 0 .5%;
+}
 
 .header{
     text-align: center;
     color: #fff;
-    padding: 5rem 0 0 0;
-    background-color: var(--color-primary-600);
-
 }
 
 .header h1{
@@ -50,10 +46,6 @@
     justify-content: center;
     align-items: center;
     padding-top: 10.5rem;
-}
-
-.section{
-    background-color: var(--color-primary-600);
 }
 
 .left{

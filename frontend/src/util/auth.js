@@ -32,7 +32,7 @@ export function checkAuthLoader() {
   const token = getAuthToken();
 
   if (!token) {
-    return redirect('/auth?mode=login');
+    return redirect('/login');
   }
 
   return null;
