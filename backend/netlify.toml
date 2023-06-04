@@ -1,12 +1,14 @@
 [build]
     functions = "functions"
+    publish =  "dist"
 
 [dev]
     publish = "dist"
+    port = 8080
 
 [functions]
     directory = "functions"
-    included_files = ["users.json"]
+    included_files = ["./users.json"]
 
 [[redirects]]
     to = "/.netlify/functions/api/:splat"

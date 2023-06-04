@@ -1,8 +1,4 @@
-const fs = require('node:fs/promises')
-// const path = require('path');
-// const rootDir = path.dirname(require.main.filename);
-
-// const pth = path.join(rootDir, 'users.json');
+const fs = require('fs').promises;
 
 async function readData() {
   const data = await fs.readFile('users.json', 'utf8');
