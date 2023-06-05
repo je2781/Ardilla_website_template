@@ -8,7 +8,7 @@
 
 [functions]
     directory = "functions"
-    included_files = ["./src/users.json"]
+    included_files = ["/tmp/users.json"]
 
 [[redirects]]
     to = "/.netlify/functions/api/:splat"
