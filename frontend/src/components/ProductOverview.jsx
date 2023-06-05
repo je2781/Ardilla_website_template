@@ -19,7 +19,7 @@ const ProductOverview = () => {
     }
 
     return(
-        <section className={classes.section} id='section-2'>
+        <section className={classes.section}>
             <h1>Products</h1>
             <Slider className="main-slider" {...settings}>
                 <div className="slide">
