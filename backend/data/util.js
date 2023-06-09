@@ -1,14 +1,19 @@
-const fs = require('node:fs/promises');
+const User = require('../models/user');
 
+async function readData(){
+  const users = await User.find().toArray();
+  return users;
+} 
 
-async function readData() {
-  const data = await fs.readFile('users.json', 'utf8');
-  return JSON.parse(data);
+async function writeData(data){
+  const newUser = new User({
+    email: data.email,
+    password: data.password,
+  });
+
+  await newUser.save();  
 }
 
-async function writeData(data) {
-  await fs.writeFile('users.json', JSON.stringify(data));
-}
 
 exports.readData = readData;
 exports.writeData = writeData;

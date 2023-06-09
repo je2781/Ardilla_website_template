@@ -1,6 +1,8 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const serverless = require('serverless-http');
+const mongoose = require('mongoose');
+require('dotenv').config();
 
 const authRoutes = require('../routes/auth');
 
@@ -21,5 +23,7 @@ app.use((error, req, res, next) => {
   const message = error.message || 'Something went wrong.';
   res.status(status).json({ message: message });
 });
+
+mongoose.connect(process.env.DB).then((_) => console.log('connected to database'));
 
 module.exports.handler = serverless(app);

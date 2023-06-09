@@ -6,10 +6,6 @@
     publish = "dist"
     port = 8080
 
-[functions]
-    directory = "functions"
-    included_files = ["./users.json"]
-
 [[headers]]
     for = "/*"
         [headers.values]
