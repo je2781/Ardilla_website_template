@@ -2,7 +2,6 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const serverless = require('serverless-http');
 const mongoose = require('mongoose');
-require('dotenv').config();
 
 const authRoutes = require('../routes/auth');
 
@@ -19,8 +18,8 @@ app.use((req, res, next) => {
 app.use(authRoutes);
 
 app.use((error, req, res, next) => {
-  const status = error.status || 500;
-  const message = error.message || 'Something went wrong.';
+  const status = error.status;
+  const message = error.message;
   res.status(status).json({ message: message });
 });
 

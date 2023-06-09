@@ -1,24 +1,20 @@
 const { hash } = require('bcryptjs');
-
+const User = require('../models/user');
 const { NotFoundError } = require('../util/errors');
-const { readData, writeData } = require('./util');
 
 async function add(data) {
   const hashedPw = await hash(data.password, 12);
-
-  const updatedData = {...data, password: hashedPw};
-
-  await writeData(updatedData);
+  const newUser = new User({
+    email: data.email,
+    password: hashedPw
+  });
+  await newUser.save();;
   return {email: data.email };
 }
 
 async function get(email) {
-  const users = await readData();
-  if (!users || users.length === 0) {
-    throw new NotFoundError('Could not find any users.');
-  }
+  const user = await User.findOne({email: email});
 
-  const user = users.find((ev) => ev.email === email);
   if (!user) {
     throw new NotFoundError('Could not find user for email ' + email);
   }

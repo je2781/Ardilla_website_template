@@ -18,7 +18,6 @@ router.post('/signup', async (req, res, next) => {
         errors.email = 'Email exists already.';
       }
     } catch (error) {
-
     }
   }
 
