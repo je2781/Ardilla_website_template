@@ -1,4 +1,4 @@
-# Getting Started with Dummy Webpage
+# Getting Started with Ardilla Webpage
 
 ## Available Scripts
 
