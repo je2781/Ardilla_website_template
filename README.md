@@ -11,9 +11,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 In the backend project directory, you also run
 
-### `npm start`
+### `netlify dev`
 
-Runs the server app. The server must be running at the same time as the react app to experience user authentication.
+Runs the express app using the local development server.The app must be running at the same time as the react app to experience user authentication.
+
+To install netlify commang line run
+### `npm i netlify-cli -g`
 
 
 
